@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" href="https://unpkg.com/simplebar@latest/dist/simplebar.css">
+	<link rel="stylesheet" href="css/style.css">
+	<title>Форма отправки</title>
+</head>
+
+<body>
+	<div class="wrapper">
+		<div class="form">
+			<form action="#" id="form" class="form__body">
+
+				<fieldset class="form__fieldset form1" data-simplebar>
+					<h4 class="form__title">Info</h4>
+					<div class="form__item">
+						<label for="formEmail" class="form__label">Enter your email address</label>
+						<input id="formEmail" type="text" name="email" class="form__input req email"
+							placeholder="team@checkforpatent.com">
+					</div>
+					<div class="form__product-box">
+						<div class="form__product">
+							<h4 class="form__title">Product 1</h4>
+							<div class="form__item form__item--item">
+								<label for="formEmail" class="form__label form__label--label">Enter main keyword for the product</label>
+								<input id="formEmail" type="text" name="keyword" class="form__input req"
+									placeholder="for example, sylicon wine cup">
+							</div>
+							<div class="form__item">
+								<label for="formEmail" class="form__label">Enter link to the similar product as a reference</label>
+								<input id="formEmail" type="text" name="http" class="form__input req" placeholder="https://...">
+							</div>
+						</div>
+					</div>
+					<a class="form__link" href="#">Add more products</a>
+					<p class="form__txt">We offer discount up to 36% for multiple checks</p>
+					<div class="form__btn">
+						<button type="submit" class="form__button">Submit and Pay 24.99 USD</button>
+					</div>
+					<p class="form__info">Secure payment with Stripe</p>
+				</fieldset>
+
+				<fieldset class="form__fieldset form2" data-simplebar>
+					<h4 class="form__title">Adding more products</h4>
+					<p class="form__label">The more items you check, the better the price.</p>
+					<div class="options">
+						<div class="options__item">
+							<input class="options__input" id="form" type="radio" value="5" name="more" checked>
+							<label for="form" class="options__label"><span class="options__span">5 products for 80 usd / 16$ for
+									each</span><span class="options__span2">You safe 36% on each patent check</span></label>
+						</div>
+						<div class="options__item">
+							<input class="options__input" id="form" type="radio" value="4" name="more">
+							<label for="form" class="options__label"><span class="options__span">4 products for 72 usd / 18$ for
+									each</span><span class="options__span2">You safe 28% on each patent check </span></label>
+						</div>
+						<div class="options__item">
+							<input class="options__input" id="form" type="radio" value="3" name="more">
+							<label for="form" class="options__label"><span class="options__span">3 products for 60 usd / 20$ for
+									each</span><span class="options__span2">You safe 20% on each patent check</span></label>
+						</div>
+						<div class="options__item">
+							<input class="options__input" id="form" type="radio" value="2" name="more">
+							<label for="form" class="options__label"><span class="options__span">2 products for 44 usd / 22$ for
+									each</span><span class="options__span2">You safe 12% on each patent check</span></label>
+						</div>
+						<div class="options__item">
+							<input class="options__input" id="form" type="radio" value="1" name="more">
+							<label for="form" class="options__label"><span class="options__span">1 product for 24.99 usd</span><span
+									class="options__span2">You safe 36% on each patent check</span></label>
+						</div>
+					</div>
+					<a class="form__button next2">Continue</a>
+				</fieldset>
+
+				<fieldset class="form__fieldset form3">
+					<div class="form__product form__product--items" style="background-image: url(img/card.jpg);">
+						<div class="form__product-item">
+						<h4 class="form__title">Successfull payment</h4>
+						<p class="form__txt">Your request has been accepted and will be processed within 24 working hours. We will
+							send you a payment details and all information to your email.</p>
+						</div>
+							<button type="submit" class="form__back">Back</button>
+					</div>
+				</fieldset>
+			</form>
+		</div>
+	</div>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+	<script src="https://unpkg.com/simplebar@latest/dist/simplebar.min.js"></script>
+	<script src="js/script.js"></script>
+</body>
+
+</html>
